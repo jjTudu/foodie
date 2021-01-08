@@ -1,0 +1,21 @@
+{
+	"name": "@elegantstack/gatsby-starter-flexiblog-science",
+	"private": true,
+	"version": "2.9.0",
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"clean": "gatsby clean",
+		"serve": "gatsby serve"
+	},
+	"dependencies": {
+		"@elegantstack/gatsby-theme-flexiblog-science": "2.9.0",
+		"gatsby": "^2.24.11",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
+	},
+	"devDependencies": {
+		"prettier": "^2.0.5"
+	}
+}
