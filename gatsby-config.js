@@ -1,5 +1,48 @@
 module.exports = {
-  plugins: ['@elegantstack/gatsby-theme-flexiblog-science'],
+  plugins: ['@elegantstack/gatsby-theme-flexiblog-science',    {
+    resolve: "gatsby-plugin-google-analytics",
+    options: {
+      trackingId: "6757",
+    },
+  },
+  "gatsby-plugin-sharp",
+  "gatsby-plugin-react-helmet",
+  "gatsby-plugin-sitemap",
+  "gatsby-plugin-offline",
+  {
+    resolve: "gatsby-plugin-manifest",
+    options: {
+      icon: "content/assets/logo.png",
+    },
+  },
+  "gatsby-transformer-remark",
+  "gatsby-plugin-mdx",
+  "gatsby-transformer-sharp",
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "images",
+      path: "./content/assets/",
+    },
+    __key: "images",
+  },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "pages",
+      path: "./public/pages/",
+    },
+    __key: "pages",
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `data`,
+      path: `./data/`,
+    },
+  },
+  `gatsby-transformer-csv`,],
+
   siteMetadata: {
     //General Site Metadata
     title: 'FlexiBlog Theme',

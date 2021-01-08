@@ -13,4 +13,16 @@ module.exports = [{
     },{
       plugin: require('../../node_modules/gatsby-plugin-layout/gatsby-browser.js'),
       options: {"plugins":[],"component":"C:\\Users\\searching\\@elegantstack\\packages\\flow-ui\\layout\\src\\Layout\\Layout.jsx"},
+    },{
+      plugin: require('../../node_modules/gatsby-plugin-google-analytics/gatsby-browser.js'),
+      options: {"plugins":[],"trackingId":"6757","head":false,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0},
+    },{
+      plugin: require('../../node_modules/gatsby-plugin-offline/gatsby-browser.js'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('../../node_modules/gatsby-plugin-manifest/gatsby-browser.js'),
+      options: {"plugins":[],"icon":"content/assets/logo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"3b7dc78ea960863e8874e7ab7373f3ed"},
+    },{
+      plugin: require('../../node_modules/gatsby-plugin-mdx/gatsby-browser.js'),
+      options: {"plugins":[],"extensions":[".mdx"],"defaultLayouts":{},"gatsbyRemarkPlugins":[],"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"]},
     }]
